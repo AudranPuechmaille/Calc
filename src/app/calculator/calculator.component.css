@@ -1,0 +1,52 @@
+/* calculator.component.css */
+
+.calculator-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-section input[type="number"],
+.input-section select,
+.input-section button {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.result-section {
+  margin-bottom: 20px;
+}
+
+.history-section {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.history-section h3 {
+  margin-bottom: 10px;
+}
+
+.history-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-section li {
+  margin-bottom: 10px;
+}
+
+.history-section li button {
+  margin-left: 10px;
+}

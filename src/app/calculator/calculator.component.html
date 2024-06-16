@@ -1,0 +1,31 @@
+<!-- calculator.component.html -->
+
+<div class="calculator-container">
+  <h2>Calculatrice</h2>
+
+  <div class="input-section">
+    <input type="number" [(ngModel)]="number1" placeholder="Nombre 1" />
+    <select [(ngModel)]="selectedOperation">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
+    </select>
+    <input type="number" [(ngModel)]="number2" placeholder="Nombre 2" />
+    <button (click)="calculate()">Calculer</button>
+  </div>
+
+  <div class="result-section">
+    <p>Résultat : {{ result }}</p>
+  </div>
+
+  <div class="history-section">
+    <h3>Historique</h3>
+    <ul>
+      <li *ngFor="let entry of history">
+        <strong>{{ entry.time }}</strong> - {{ entry.operation }} = {{ entry.result }}
+        <button (click)="deleteEntry(entry)">Effacer</button>
+      </li>
+    </ul>
+  </div>
+</div>
